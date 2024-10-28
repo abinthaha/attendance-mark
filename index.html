@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find seat</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="form-element">
+        <label for="">Enter the JSON</label>
+        <textarea name="" rows="4" id="json-input"></textarea>
+      </div>
+      <section>
+        <div class="form-element">
+          <label for="">Name/Email/Seat number</label>
+          <input type="text" name="name" id="searchValue" />
+        </div>
+        <button onclick="findSeats()">Search</button>
+      </section>
+    </main>
+    <table class="table">
+      <thead>
+        <tr>
+          <td>Reserved name</td>
+          <td>Reserved email</td>
+          <td>Reserved by</td>
+          <td>Seat no</td>
+        </tr>
+      </thead>
+      <tbody id="list"></tbody>
+    </table>
+    <script src="./script.js"></script>
+  </body>
+</html>

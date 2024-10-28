@@ -1,0 +1,49 @@
+#json-input {
+    width: 500px;
+    height: 400px;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+body {
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+main {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px #ddd;
+    background-color: #fff;
+}
+
+#list {
+    list-style: none;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.table td {
+    padding: 10px;
+    background-color: #f5eded;
+    border: 1px solid #222;
+    width: 200px;
+    text-overflow: ellipsis;
+}
+
+.table thead td {
+    background-color: #ccc;
+}
