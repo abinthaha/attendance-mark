@@ -22,6 +22,10 @@ function findSeats(event) {
       (searchItem.entity.reservations &&
         searchItem.entity.reservations[0].reservedFor.email
           ?.toLowerCase()
+          .indexOf(searchValue.toLowerCase()) > -1) ||
+      (searchItem.entity.reservations &&
+        searchItem.entity.reservations[0].reservedBy.email
+          ?.toLowerCase()
           .indexOf(searchValue.toLowerCase()) > -1)
     ) {
       arr.push(searchItem);
